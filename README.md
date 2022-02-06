@@ -2,6 +2,6 @@
 You can get a simple vagrant template by typing:  
 ❯ vagrant init  
 
-If you want a template for a spcific box/image
+If you want a template for a spcific box/image.  
 ❯ vagrant up --provider=virtualbox  
 
