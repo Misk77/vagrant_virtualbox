@@ -1,4 +1,5 @@
-# Vagrant VirtualBox
+# Runing on macOS 
+Vagrant with VirtualBox
 You can get a simple vagrant template by typing:  
 ❯ vagrant init  
 
