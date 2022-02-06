@@ -6,4 +6,5 @@ You can get a simple vagrant template by typing:
 If you want a template for a spcific box/image.  
 ❯ vagrant up --provider=virtualbox  
 
-# commit text
+# three_rhel7_Vagrantfile
+

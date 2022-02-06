@@ -1,0 +1,30 @@
+#paste the given below content in Vagrantfile
+Vagrant.configure("2") do |config|
+  #config.vm.box = "base"
+
+  config.vm.define "node-01" do |node01|
+    node01.vm.provider "virtualbox" do |vb_node01|
+      vb_node01.memory = 1024
+      vb_node01.cpus = 2
+    end
+
+    node01.vm.box = "generic/rhel7"
+    node01.vm.hostname = "node-01"
+    node01.vm.network "private_network", ip: "192.168.56.10"
+
+  end
+
+  config.vm.define "node-02" do |node02|
+    node02.vm.box = "generic/rhel7"
+    node02.vm.hostname = "node02"
+    node02.vm.network "private_network", ip: "192.168.56.11"
+
+  end
+
+  config.vm.define "node-03" do |node03|
+    node03.vm.box = "generic/rhel7"
+    node03.vm.hostname = "node03"
+    node03.vm.network "private_network", ip: "192.168.56.12"
+  end
+
+end
